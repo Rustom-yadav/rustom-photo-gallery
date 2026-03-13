@@ -1,16 +1,35 @@
-# React + Vite
+# 📸 Photo Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> 🌐 **Live:** [live page](https://rustom-photo-gallery.vercel.app/)  
+> 📂 **Repo:** [rustom-photo-gallery](https://github.com/Rustom-yadav/rustom-photo-gallery)
 
-Currently, two official plugins are available:
+A React photo gallery that fetches images from the Picsum API, with search by author and favourites (persisted in localStorage).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Fetch 30 photos from [Picsum Photos API](https://picsum.photos/)
+- Responsive grid: 1 column (mobile), 2 (tablet), 4 (desktop)
+- Search by author name (real-time, no extra API call)
+- Mark photos as favourites (useReducer + localStorage)
+- Loading spinner and error state
 
-## Expanding the ESLint configuration
+## 🛠️ Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Tailwind CSS
+- Custom hook `useFetchPhotos`, `useCallback`, `useMemo`
+
+## 🚀 Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open [localhost](http://localhost:5173).
+
+## 📜 License
+
+MIT © Rustom 
